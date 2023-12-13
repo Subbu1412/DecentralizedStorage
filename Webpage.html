@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Storage Web App</title>
+    <link rel="stylesheet" href="Webpage.css">
+</head>
+<body>
+    <header>
+        <h1>Document Storage Web App</h1>
+        <button id="logoutButton" onclick="logout()">Logout</button>
+    </header>
+    
+<main>
+    <section id="document-management">
+            <h2>Document Management</h2>
+            <input type="file" id="fileInput" />
+            <button onclick="uploadDocument()">Upload</button>
+
+            <h3>Uploaded Documents</h3>
+            <ul id="documentList"></ul>
+        </section>
+
+        <section id="access-control">
+            <h2>Access Control</h2>
+            <label for="userSelect">Select User:</label>
+            <select id="userSelect">
+                <!-- Add options dynamically based on user data -->
+                <!-- For simplicity, you can replace this with actual user data in your application -->
+                <option value="user1">User 1</option>
+                <option value="user2">User 2</option>
+                <option value="user3">User 3</option>
+            </select>
+            <br>
+            <label for="permissionSelect">Select Permission:</label>
+            <select id="permissionSelect">
+                <option value="read">Read</option>
+                <option value="write">Write</option>
+                <!-- Add more permission options as needed -->
+            </select>
+            <br>
+            <button onclick="setAccessControl()">Set Access Control</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Document Storage Web App</p>
+    </footer>
+
+    <script src="Webpage.js"></script>
+</body>
+</html>

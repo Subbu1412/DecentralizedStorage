@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Authentication System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Web Based Document Storage</h1>
+  </div>
+  <div class="container">
+    <div class="form" id="registrationForm">
+      <h2>User Registration</h2>
+      <label for="regUsername">Username:</label>
+      <input type="text" id="regUsername" required>
+      <label for="regPassword">Password:</label>
+      <input type="password" id="regPassword" required>
+      <button onclick="registerUser()">Register</button>
+    </div>
+
+    <div class="form" id="loginForm">
+      <h2>User Login</h2>
+      <label for="loginUsername">Username:</label>
+      <input type="text" id="loginUsername" required>
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" required>
+      <button onclick="loginUser()">Login</button>
+    </div>
+
+    <p id="error-message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
