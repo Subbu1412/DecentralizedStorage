@@ -20,6 +20,7 @@ body {
     display: flex;
     height: 100vh;
     margin-top: 200px;
+    background-image: url('https://pixelplex.io/wp-content/uploads/2021/08/decentralized-storage-main-1600.png');
   }
   
   .container {
